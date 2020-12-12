@@ -3,11 +3,11 @@
 ## Descripción
 
 La solución diseñada corresponde a la Tarea Final para el curso IIC3752 Tecnologias para Inteligencia de Negocios. Esta busca resolver la necesidad de la Biblioteca del Congreso Nacional de desarrollar un sistema de gestión institucional que le permita visualizar estadísticas de información de los servicios de asesoria generados a los parlamentarios, además de información de estadísticas de créditos otorgados por el fondo fogape. 
-A diferencia del proyecto final entregado anteriormente, esta tarea es una solución de Inteligencia de Negocios realizada completamente mediante el uso de herramientas de Microsoft. En particular el uso de Azure, tanto por su capacidad de almacenamiento con SQL Server, como por su herramienta para ocupar un Data Factory, y luego el uso de PowerBI como herramienta de analisis y visualización de datos.
+A diferencia del proyecto final entregado anteriormente, esta tarea es una solución de Inteligencia de Negocios realizada completamente mediante el uso de herramientas de Microsoft. En particular el uso de Azure, tanto por su capacidad de almacenamiento con el servicio de base de datos, como por su herramienta para ocupar un Data Factory, y luego el uso de PowerBI como herramienta de analisis y visualización de datos.
 
 ## Solución Implementada
 
-Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio.
+Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en el servicio Base de Datos, que utilizamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio.
 
 Se crearon 2 archivos de visualizaciones en PowerBI, cuyos archivos se subieron al directorio powerbi_views de este repositorio, los cuales se ejecutan al darle doble click y presentan las visualizaciones construidas.
 
@@ -71,3 +71,11 @@ Los datos obtenidos de Servicios a Parlamentarios nos permiten visualizar los si
 ![Fogape: Servicios Por Partido y Tipo Asesoria](images/5ServiciosporPartidoyTipoAsesoria.png)
 ![Fogape: Tipo de Asesoria por Partido](images/6TipodeAsesoriaporPartido.png)
 ![Fogape: Servicios Por Profesion Asesor](images/7ServiciosporProfesionAsesor.png)
+
+#### Conclusiones
+
+Esta tarea se realizó exitosamente, ya que se logró cumplir con la meta de replicar el trabajo que ya realizamos para el cliente BCN, quien requirió la construcción de visualizaciones en Tableau, para información de estadísticas de servicios a parlamentarios, y de créditos fogape.
+
+Ahora, con el objetivo de implementar dichas visualizaciones, haciendo uso de la plataforma Azure y sus herramientas, logramos implementar procesamiento de ETL con Data Factory para procesar los datos y almacenarlos en el servicio de Base de Datos y finalmente se construyó un conjunto de visualizaciones con PowerBI.
+
+Como conclusión académica podemos indicar que fue una experiencia importante, donde pudimos aplicar los conceptos vistos en el curso, a la implementación de una solución para un cliente de la vida real, logrando el desarrollo exitoso de las actividades requeridas.
