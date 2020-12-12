@@ -1,14 +1,14 @@
-# IIC3752 - Tarea Final: BCN
+# IIC3752 - Tarea Final: Visualización Datos BCN
 
 ## Descripción
 
 La solución diseñada corresponde a la Tarea Final para el curso IIC3752 Tecnologias para Inteligencia de Negocios. Esta busca resolver la necesidad de la Biblioteca del Congreso Nacional de desarrollar un sistema de gestión institucional que le permita visualizar información generada en distintos sectores. A diferencia del proyecto final entregado, la tarea final es una solución de Inteligencia de Negocios realizada completamente mendiante el uso de herramientas de Microsoft. En particular el uso de Azure, tanto por su capacidad de almacenamiento como por su herramienta para ocupar un Data Factory, y luego el uso de Power BI como herramienta de analisis y visualización de datos.
 
-## Instalación
+## Solución Implementada
 
-Para ejecutar los archivos de Power BI es necesario descargar Power BI Desktop. Lo cual se puede lograr desde el siguiente link: https://powerbi.microsoft.com/en-us/
+Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de de servicios de infromación realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se inscruyen print screen en el directorio imagenes de este repositorio 
 
-## Uso
+## Uso de la plataforma Azure
 
 Para el uso de la plataforma Azure es necesario que se le otorge permiso al usuario para acceder a los recursos creados. Para esta entrega utilizamos la cuenta de Azure de uno de los integrantes del grupo, y resulta simple transferir la propiedad de los recursos a otro usuario administrador para la Biblioteca del Congreso Nacional si es deseado. Luego, se podrá acceder al Data Factory y Base de Datos y StorageBlob creados.
 
