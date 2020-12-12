@@ -63,6 +63,7 @@ Los datos obtenidos del fogape nos permiten visualizar los siguientes diagramas.
 #### Servicios a Parlamentarios
 
 Los datos obtenidos de Servicios a Parlamentarios nos permiten visualizar los siguientes diagramas.
+
 ![Fogape: Servicios Por Partido](images/1ServiciosPorPartido.png)
 ![Fogape: Servicios Por AreaBCN](images/2ServiciosPorAreaBCN.png)
 ![Fogape: Servicios Por Partidos y Region](images/3ServiciosPorPartidosyRegion.png)
