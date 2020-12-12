@@ -2,11 +2,12 @@
 
 ## Descripción
 
-La solución diseñada corresponde a la Tarea Final para el curso IIC3752 Tecnologias para Inteligencia de Negocios. Esta busca resolver la necesidad de la Biblioteca del Congreso Nacional de desarrollar un sistema de gestión institucional que le permita visualizar información generada en distintos sectores. A diferencia del proyecto final entregado, la tarea final es una solución de Inteligencia de Negocios realizada completamente mendiante el uso de herramientas de Microsoft. En particular el uso de Azure, tanto por su capacidad de almacenamiento como por su herramienta para ocupar un Data Factory, y luego el uso de Power BI como herramienta de analisis y visualización de datos.
+La solución diseñada corresponde a la Tarea Final para el curso IIC3752 Tecnologias para Inteligencia de Negocios. Esta busca resolver la necesidad de la Biblioteca del Congreso Nacional de desarrollar un sistema de gestión institucional que le permita visualizar estadísticas de información de los servicios de asesoria generados a los parlamentarios, además de información de estadísticas de créditos otorgados por el fondo fogape. 
+A diferencia del proyecto final entregado anteriormente, esta tarea es una solución de Inteligencia de Negocios realizada completamente mediante el uso de herramientas de Microsoft. En particular el uso de Azure, tanto por su capacidad de almacenamiento con SQL Server, como por su herramienta para ocupar un Data Factory, y luego el uso de PowerBI como herramienta de analisis y visualización de datos.
 
 ## Solución Implementada
 
-Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de de servicios de infromación realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se inscruyen print screen en el directorio imagenes de este repositorio 
+Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio imagenes de este repositorio 
 
 ## Uso de la plataforma Azure
 
