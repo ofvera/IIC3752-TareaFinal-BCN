@@ -49,6 +49,6 @@ Los datos obtenidos del fogape nos permiten visualizar los siguientes diagramas.
 
 ![Fogape: Derechos por Empresa](images/fogape1.png)
 ![Fogape: Derechos por Institución](images/fogape2.png)
-![Fogape: Solicitudes por Empresa]((images/fogape3.png)
-![Fogape: Solicitudes por Institución]((images/fogape4.png)
-![Fogape: Solicitudes Totales]((images/fogape5.png)
+![Fogape: Solicitudes por Empresa](images/fogape3.png)
+![Fogape: Solicitudes por Institución](images/fogape4.png)
+![Fogape: Solicitudes Totales](images/fogape5.png)
