@@ -47,6 +47,8 @@ Una vez almacenados los datos, podemos avanzar al analisis de los datos desde nu
 
 Los datos obtenidos del fogape nos permiten visualizar los siguientes diagramas.
 
-![Fogape: Derechos](pdf_views/fogape1.pdf)
-![Fogape: Solicitudes](pdf_views/fogape2.pdf)
-![Fogape: Detalle](pdf_views/fogape3.pdf)
+![Fogape: Derechos por Empresa](images/fogape1.png)
+![Fogape: Derechos por Institución](images/fogape2.png)
+![Fogape: Solicitudes por Empresa]((images/fogape3.png)
+![Fogape: Solicitudes por Institución]((images/fogape4.png)
+![Fogape: Solicitudes Totales]((images/fogape5.png)
