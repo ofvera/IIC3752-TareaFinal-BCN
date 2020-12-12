@@ -17,6 +17,8 @@ Una vez establecido el uso de la plataforma Azure, es posible acceder las visual
 
 ## Proceso de Trabajo
 
+### Azure 
+
 Para empezar con la recolección de datos, utilizamos los csv obtenidos desde el crawler entregado para el proyecto final. Por lo tanto, para efectos de esta entrega, utilizaremos los csv obtenidos y asumiremos que tenemos como obtener sus actualizaciones desde los crawlers ya creados. Estos csv se pueden encontrar en la carpeta `/csvs` y corresponden a los datos extraidos del fogape.
 
 Estos archivos deben almacenarse en alguna cuenta de almacenamiento, por lo que creamos un recurso de Blob Storage, donde eventualmente podriamos automatizar la extracción del crawler. Sin embargo, por ahora simplemente es un espacio para almacenar los archivos csv obtenidos.
@@ -27,11 +29,24 @@ Por otro lado, necesitamos crear el recurso del Servidor de Azure Database for P
 
 ![PSQL Server](images/ServidorPSQL.png)
 
-Luego, procedimos a crear un recurso de Data Factory para gestionar la integración de los datos extraidos. Para esto fue necesario crear 4 pipelines, correspondientes a cada tabla creada en la base de datos creada. Cada pipeline requiere de Datasets que le permitan ubicar los archivos csv y ubicar las tablas donde estos deben ser insertados. Luego, cada pipeline se encarga de monitorear el proceso de integración, con la finalidad de estandarizar, uniformar y automatizar la forma en que los datos son recolectados.
+Luego, procedimos a crear un recurso de Data Factory para gestionar la integración de los datos extraidos. Para esto fue necesario crear 4 pipelines, correspondientes a cada tabla creada en la base de datos. Cada pipeline requiere de Datasets que le permitan ubicar los archivos csv y ubicar las tablas donde estos deben ser insertados. Luego, cada pipeline se encarga de monitorear el proceso de integración, con la finalidad de estandarizar, uniformar y automatizar la forma en que los datos son recolectados.
+
+Si en un futuro los datos entregados muestran irregularidades, es acá donde se podran uniformar y estandarizar. Sin embargo, actualmente el crawler soluciona los principales aspectos de integración ya que no eran muy complicados de uniformar. Es por esto que los pipelines solamente son compuestos por un recurso de Copy Data.
 
 ![Data Factory: Pipelines](images/DataFactoryPipelines.png)
 
-Además, aprovechamos de crear un trigger para las pipelines. Esto automatiza parte del proceso de integración, ya que cada semana buscara los archivos csv del Blob Storage y integrara los datos en la Base de Datos deseada mientras se monitorea el proceso.
+Además, aprovechamos de crear un trigger para las pipelines. Esto automatiza parte del proceso de integración, ya que cada semana buscará los archivos csv del Blob Storage y integrara los datos en la Base de Datos deseada mientras se monitorea el proceso.
 
 ![Data Factory: Trigger](images/DataFactoryTriggers.png)
 
+### Power BI
+
+Una vez almacenados los datos, podemos avanzar al analisis de los datos desde nuestra herramienta seleccionada. Si se desea visualizar los archivos especificos, es posible encontrarlos en la carpeta `/powerbi_views` como ya se mencionó anteriormente. Sin embargo, a continuación se presentan pantallazos de las vistas obtenidas.
+
+#### Fogape
+
+Los datos obtenidos del fogape nos permiten visualizar los siguientes diagramas.
+
+![Fogape: Derechos](pdf_views/fogape1.pdf)
+![Fogape: Solicitudes](pdf_views/fogape2.pdf)
+![Fogape: Detalle](pdf_views/fogape3.pdf)
