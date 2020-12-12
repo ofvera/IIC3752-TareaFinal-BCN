@@ -7,13 +7,19 @@ A diferencia del proyecto final entregado anteriormente, esta tarea es una soluc
 
 ## Solución Implementada
 
-Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio 
+Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio.
+
+Se crearon 2 archivos de visualizaciones en PowerBI, cuyos archivos se subieron al directorio powerbi_views de este repositorio, los cuales se ejecutan al darle doble click y presentan las visualizaciones construidas.
 
 ## Uso de la plataforma Azure
 
 Para el uso de la plataforma Azure es necesario que se le otorge permiso al usuario para acceder a los recursos creados. Para esta entrega utilizamos la cuenta de Azure de uno de los integrantes del grupo, y resulta simple transferir la propiedad de los recursos a otro usuario administrador para la Biblioteca del Congreso Nacional si es deseado. Luego, se podrá acceder al Data Factory y Base de Datos y StorageBlob creados.
 
 Una vez establecido el uso de la plataforma Azure, es posible acceder las visualizaciones y los analisis realizados en Power BI Desktop mediante una cuenta y los archivos encontrados en la carpeta `/powerbi_views`. Es posible que se pida reingresar los datos de autenticacion para acceder a la base de datos.
+
+El siguiente diagrama representa la arquitectura de azure, desde el Storage Blob, pasando por el Data Factory, luego almacenando los datos en las tablas y finalmente consumiendolos en Power BI para su analisis.
+
+![Azure Arquitecture](images/diagrama.png)
 
 ## Proceso de Trabajo
 
