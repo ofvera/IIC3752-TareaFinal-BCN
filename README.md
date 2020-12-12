@@ -17,6 +17,10 @@ Para el uso de la plataforma Azure es necesario que se le otorge permiso al usua
 
 Una vez establecido el uso de la plataforma Azure, es posible acceder las visualizaciones y los analisis realizados en Power BI Desktop mediante una cuenta y los archivos encontrados en la carpeta `/powerbi_views`. Es posible que se pida reingresar los datos de autenticacion para acceder a la base de datos.
 
+El siguiente diagrama representa la arquitectura de azure, desde el Storage Blob, pasando por el Data Factory, luego almacenando los datos en las tablas y finalmente consumiendolos en Power BI para su analisis.
+
+![Azure Arquitecture](images/diagrama.png)
+
 ## Proceso de Trabajo
 
 ### Azure 
