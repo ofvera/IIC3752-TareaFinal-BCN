@@ -7,7 +7,9 @@ A diferencia del proyecto final entregado anteriormente, esta tarea es una soluc
 
 ## Solución Implementada
 
-Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio 
+Para cumplir con los requerimientos de esta tarea, se utilizó la plataforma Azure, donde se crearon Data Factories para procesar los archivos csv que extraen información desde la página del fogape, se procesan y cargan en una Base de Datos SQL Server que creamos para consolidar nuestros datos en Azure. Ademas se extrajeron los datos detallados de servicios de información realizados a parlamentarios, por los asesores de la BCN. De esta forma consolidamos un datawarehouse en Azure con todos los datos recuperados. Finalmente realizamos visualizaciones utilizando PowerBI, de las cuales se incluyen print screen en el directorio images de este repositorio.
+
+Se crearon 2 archivos de visualizaciones en PowerBI, cuyos archivos se subieron al directorio powerbi_views de este repositorio, los cuales se ejecutan al darle doble click y presentan las visualizaciones construidas.
 
 ## Uso de la plataforma Azure
 
